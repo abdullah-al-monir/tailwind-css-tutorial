@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Tailwind Starter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="bg-red-500 p-5 text-white">
+      <nav class="bg-blue-500">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="flex justify-center items-center bg-gray-200">
+        <div class="size-20 h-120 bg-green-200">1</div>
+        <div class="size-20 h-60 bg-blue-200">2</div>
+        <div class="size-20 h-32 bg-yellow-200">3</div>
+        <div class="size-20 h-40 bg-purple-200">4</div>
+        <div
+          class="size-20 flex self-end justify-center items-center bg-teal-200"
+        >
+          5
+        </div>
+      </div>
+      <div class="flex flex-col bg-red-100">
+        <div class="basis-64 bg-blue-200">01</div>
+        <div class="basis-64 bg-yellow-300">02</div>
+        <div class="basis-128 bg-purple-300">03</div>
+      </div>
+      <section>
+        <div class="grid grid-flow-col grid-cols-6 gap-5 text-3xl text-white">
+          <div class="p-20 bg-blue-900 w-full col-span-2">1</div>
+          <div class="p-20 bg-green-900 w-full">2</div>
+          <div class="p-20 bg-green-900 w-full">3</div>
+          <div class="p-20 bg-teal-900 w-full row-span-2 col-start-3">4</div>
+          <div class="p-20 bg-green-900 w-full">5</div>
+          <div class="p-20 bg-green-900 w-full">6</div>
+          <div class="p-20 bg-green-900 w-full">7</div>
+          <div class="p-20 bg-green-900 w-full">8</div>
+          <div class="p-20 bg-green-900 w-full col-start-1 col-end-6">9</div>
+        </div>
+      </section>
+      <section>
+        <article>
+          <header>
+            <h1>Understanding Semantic HTML</h1>
+            <p>
+              Published on: <time datetime="2026-03-31">March 31, 2026</time>
+            </p>
+          </header>
+          <p>
+            Semantic tags provide meaning to the web page rather than just
+            presentation.
+          </p>
+          <footer>
+            <p>Written by: Jane Doe</p>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <h2>Key Features</h2>
+        <figure>
+          <img src="https://via.placeholder.com/400" alt="Placeholder Image" />
+          <figcaption>A caption describing the figure above.</figcaption>
+        </figure>
+
+        <details>
+          <summary>Click to see more details</summary>
+          <p>This is hidden content inside a semantic details tag.</p>
+        </details>
+      </section>
+
+      <aside>
+        <h3>Related Links</h3>
+        <ul>
+          <li><a href="#">MDN Web Docs</a></li>
+          <li><a href="#">Tailwind Documentation</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <address>
+        Contact us at: <a href="mailto:hello@example.com">hello@example.com</a>
+      </address>
+      <p>&copy; 2026 Semantic Playground</p>
+    </footer>
+  </body>
+</html>
